@@ -1,19 +1,17 @@
-# 🎈 Blank app template
+# 🌏 아시아 해수면 온도(SST) 대시보드
 
-A simple Streamlit app template for you to modify!
+NOAA OISST v2 고해상도 데이터를 사용하여 아시아 전역의 일별 해수면 온도를 시각화하는 Streamlit 대시보드입니다.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+![Dashboard Screenshot](https://user-images.githubusercontent.com/example.png)  <!-- 이 부분은 실제 스크린샷 링크로 교체하세요 -->
 
-### How to run it on your own machine
+## ✨ 주요 기능
 
-1. Install the requirements
+-   **날짜 선택**: 사이드바에서 원하는 날짜를 선택하여 해당일의 SST 데이터를 조회할 수 있습니다.
+-   **지역 특화**: 아시아 전역(위도 -10~60, 경도 60~150)에 초점을 맞춥니다.
+-   **온도 강조 시각화**: 30℃를 기준으로 온도를 정규화하여, 고수온 해역을 붉은색으로 명확하게 강조합니다.
+-   **데이터 미리보기**: 시각화에 사용된 원본 `xarray` 데이터를 바로 확인할 수 있습니다.
+-   **한글 지원**: Pretendard 폰트를 내장하여 어떤 환경에서도 한글 제목과 라벨이 깨지지 않습니다.
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+## 📂 폴더 구조
 
-2. Run the app
-
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+이 프로젝트를 올바르게 실행하려면 아래와 같은 폴더 구조를 유지해야 합니다. `fonts` 폴더를 직접 만들고 그 안에 폰트 파일을 위치시켜야 합니다.
